@@ -1,0 +1,20 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "nodemon server/server.js",
+    "build": "tsc -p .",
+    "compile": "tsc --noEmit -p .",
+    "test": "NODE_ENV=test TS_NODE_PROJECT=test/tsconfig.json mocha",
+    "eslint": "eslint"
+  },
+  "author": "Evdokimova Ekaterina",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.1.0",
+    "prettier": "3.0.3"
+  }
+}
